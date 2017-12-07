@@ -1,0 +1,99 @@
+@charset "utf-8";
+	.NormalCharacterStyle
+{
+	font-family : Copperplate Gothic Bold;
+	font-size : 13px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.Image
+{
+	background-image : url(Image.png);
+	background-repeat : no-repeat;
+	width : 546px;
+	height : 150px;
+}
+.Logo
+{
+	background-image : url(Logo.png);
+	background-repeat : no-repeat;
+	width : 123px;
+	height : 76px;
+}
+.Prices
+{
+	background-image : url(Prices.png);
+	background-repeat : no-repeat;
+	width : 146px;
+	height : 171px;
+}
+.Menu
+{
+	background : #CA992C;
+	background : rgba(202, 153, 44, 1);
+	width : 546px;
+	height : 61px;
+}
+.Track
+{
+	background-image : url(Track.png);
+	background-repeat : no-repeat;
+	width : 145px;
+	height : 170px;
+}
+.Contact
+{
+	background-image : url(Contact.png);
+	background-repeat : no-repeat;
+	width : 145px;
+	height : 171px;
+}
+.Parcel_Delivery
+{
+	background-image : url(Parcel_Delivery.png);
+	background-repeat : no-repeat;
+	width : 145px;
+	height : 170px;
+}
+.Reschedule
+{
+	background-image : url(Reschedule.png);
+	background-repeat : no-repeat;
+	width : 145px;
+	height : 170px;
+}
+.NormalCharacterStyle1
+{
+	font-family : Copperplate Gothic Bold;
+	font-size : 10px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.NormalCharacterStyle4
+{
+	font-family : Copperplate Gothic Light;
+	font-size : 23px;
+	color : #231F20;
+	color : rgb(35, 31, 32);
+}
+.NormalCharacterStyle2
+{
+	font-family : Copperplate Gothic Bold;
+	font-size : 15px;
+	color : #FFFFFF;
+	color : rgb(255, 255, 255);
+}
+.NormalCharacterStyle3
+{
+	font-family : Copperplate Gothic Light;
+	font-size : 23px;
+	color : #231F20;
+	color : rgb(35, 31, 32);
+}
+.NormalCharacterStyle5
+{
+	font-family : Copperplate Gothic Light;
+	font-size : 23px;
+	color : #231F20;
+	color : rgb(35, 31, 32);
+}

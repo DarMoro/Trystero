@@ -1,0 +1,1282 @@
+html  { 
+box-sizing: border-box; 
+}  
+*, *:before, *:after  
+{  
+box-sizing: inherit;  
+}  
+
+
+/*BODY OPTIONS*/
+
+body {
+	font-size: 1em;
+	background-color: #cc9933;
+	font-family: copperplate Gothic Bold, Georgia, Times, "Times New Roman";  
+}
+
+
+
+/*HEADER*/
+
+.header {
+	display: block;
+	justify-content: space-between;
+	background-color: #999933;
+	border-radius: 5px;
+	margin: 2%;
+	padding: 5%;
+	flex-basis: auto;
+	margin: auto;
+	text-align: center;
+	color: white;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+
+#name {
+	color: #333333;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.header div {
+	font-size: 1.1em;
+}
+
+
+.logo {
+	max-width: 30%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1%;
+}
+
+.address span {
+	text-decoration: underline;
+	text-align: center;
+}
+
+
+
+
+
+
+/*IMAGE*/
+
+.image {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	/*padding-right: 5%;*/
+	padding-bottom: 5%;
+	/*padding-left: 5%;*/
+	/*border-radius: 5px;*/
+
+}
+
+
+
+/*MAIN BODY*/
+
+
+h3, h1 {
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+
+.arrow {
+	max-width: 40%;
+	padding: 10px;
+}
+
+.icon {
+	max-width: 50%;
+	align-self: center;
+}
+
+
+a {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*SLIDING ANIMATION*/
+
+
+.para1, .para2, .para3, .para4, #wrapper2, .delivery, .tracking, .reschedule, .pricing, #wrapper4, #wrapper5Contact, #wrapper6Reschedule, #wrapper7Tracking, .van {
+	opacity:0;
+    -webkit-transform: translateX(400px); 
+    transform: translateX(400px); 
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.para1, .para2, .para3, .para4, .main, .iconHome, .iconBox, .iconBill, .iconPhone, .delivery, .tracking, .reschedule, .pricing, .main4, form, iframe {
+
+
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+@-webkit-keyframes slide { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateX(-400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateX(0); 
+    } 
+} 
+
+@keyframes slide { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(-400px); 
+    } 
+    50%{
+       opacity: 0.3; 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateX(0); 
+    } 
+} 
+
+
+/*TRANSITIONS*/
+
+
+.para1, .para2, .para3, .para4, #wrapper2, .delivery, .tracking, .reschedule, .pricing, #wrapper4 {
+	transition: transform 2s ease-in 1s;
+	transform-origin: 50% 30%;
+}
+
+
+/*.para1:hover, .para2:hover, .para3:hover, .para4:hover {
+	transform: scale(1.3);
+	font-size: 1.5em;
+}
+
+*/
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+.leftFooter {
+	text-align: left;		
+}
+
+.middleFooter {
+	text-align: center;
+		}
+
+.rightFooter {
+	text-align: right;
+}
+
+
+.leftAddress {
+	border-bottom: 0.5px solid black;
+	text-align: left;
+}
+
+
+.socialMedia {
+	border-bottom: 0.5px solid white;
+	color: white;
+	text-align: center;
+}
+
+.legal {
+	border-bottom: 0.5px solid black;
+	text-align: right;
+}
+
+#footer {
+	font-size: .5em;
+	font-family: "Avenir Next", "Avenir", sans-serif;
+	display: flex;
+	flex-direction: row;
+	width: 90vw;
+	justify-content: space-between;
+    flex-basis: auto;
+	background-color: #999933;
+	border-radius: 5px;
+	padding: 2%;
+	margin: 0 auto;
+	/* margin: 2%;
+	margin-left: 2%; */
+
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+
+#footer a {
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+
+
+
+
+/*PAGE ONE SPECIFICS*/
+
+/*#wrapper1 {
+	background: url(../PageOne/imageCover/image2.jpg);
+	background-size: cover;
+	max-width: 100%;
+	background-origin: content-box;
+    background-position: 350px 500px;
+padding: 1%;
+}*/
+
+
+.para1, .para2, .para3, .para4 {
+	text-align: center;
+	color: white;
+}
+
+.para1 {
+	grid-area: para1;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+	/*border-bottom: 20px solid white;*/
+}
+
+.para2 {
+	grid-area: para2;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.para3 {
+	grid-area: para3;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.para4 {
+	grid-area: para4;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+
+
+/*.backgroundImage {
+	background-size: contain;
+	max-width: 100%;
+}
+
+
+#wrapper {
+	background-image: url("../PageOne/imageCover/deliveryWithGradientOriginal.jpg");
+	size: auto;
+	background-origin: content-box;
+}*/
+
+
+
+
+
+
+/*PAGE ONE GRID DETAILS*/
+
+#wrapper1 {
+	display: grid;
+	grid-gap: 5vh;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: 0.10fr auto auto 0.10fr;
+	grid-template-areas: 
+	"... para1 para1 ..."
+	"... para2 para2 ..."
+	"... para3 para3 ..."
+	"... para4 para4 ..."
+	"... para5 para5 ....";
+}
+
+
+
+
+
+
+/*PAGE TWO SPECIFICS*/
+
+
+
+.image2, .image3 {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	max-width: 80%;
+	padding-right: 5%;
+	padding-bottom: 3%;
+	padding-left: 5%;
+	padding-top: 3%;
+}
+
+
+.signature {
+	display: flex;
+	max-width: 40%;
+}
+
+.aboutOne, .aboutTwo {
+	text-align: center;
+/*	padding-top: 3%;*/
+	line-height: 1.25em;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+
+.iconBox, .iconBill, .iconPhone, .iconHome {
+	text-align: center;
+	color: white;
+}
+
+
+
+
+/*MAIN BODY*/
+
+
+
+.main {
+	grid-area: about;
+	background-color: #006666;
+	border-radius: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: white;
+	font-kerning: none;
+	font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+
+
+/*ICON OPTIONS*/
+
+.iconHome {
+	grid-area: iconHome;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.iconBox {
+	grid-area: iconBox;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.iconBill {
+	grid-area: iconBill;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.iconPhone {
+	grid-area: iconPhone;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+
+
+
+
+/*PAGE TWO GRID DETAILS*/
+
+#wrapper2 {
+	display: grid;
+	grid-gap: 5vh;
+	grid-template-rows: auto 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 0.10fr 1fr 1fr 1fr 0.10fr;
+	grid-template-areas: 
+	" ... about about about ..."
+	"... ... ... ... ..."
+	"... iconBox iconBox iconBox ..."
+	"... iconBill iconBill iconBill ..."
+	"... iconPhone iconPhone iconPhone ...";
+	padding-bottom: 10%;
+}
+
+
+
+
+
+
+/*PAGE THREE SPECIFICS*/
+
+
+
+/*MAIN BODY*/
+
+
+.delivery, .tracking, .pricing, .reschedule, .iconHome, .iconBill, .iconPhone {
+	text-align: center;
+	color: white;
+}
+
+.delivery {
+	grid-area: delivery;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.tracking {
+	grid-area: tracking;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.reschedule {
+	grid-area: reschedule;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+	word-wrap: break-word;
+	overflow-wrap: break-word
+
+}
+
+.pricing {
+	grid-area: pricing;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+
+/*PAGE THREE GRID DETAILS*/
+
+#wrapper3 {
+	display: grid;
+	grid-gap: 5vh;
+	grid-template-rows: auto auto auto auto 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 0.10fr 1fr 1fr 1fr 0.10fr;
+	grid-template-areas: 
+	"... delivery delivery delivery ..."
+	"... tracking tracking tracking ..."
+	"... reschedule reschedule reschedule ..."
+	"... pricing pricing pricing ..."
+	"... ... ... ... ..."
+	"... iconHome iconHome iconHome ..."
+	"... iconBill iconBill iconBill ..."
+	"... iconPhone iconPhone iconPhone ...";
+	padding-bottom: 10%;
+}
+
+
+
+
+
+/*PAGE FOUR SPECIFICS*/
+
+
+
+/*TABLE DETAILS*/
+
+
+
+
+.main4 {
+	grid-area: main4;
+	background-color: #006666;
+	border-radius: 5px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 1%;
+	padding-bottom: 4%;
+	color: white;
+	font-kerning: none;
+	font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+
+.firstRow, .grey {
+	background-color: slategrey;
+}
+
+
+
+.info {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.green {
+	color: lightgreen;
+}
+
+.red {
+	color: red;
+}
+
+
+
+/*GRID DETAILS*/
+
+#wrapper4 {
+	display: grid;
+	grid-gap: 5vh;
+	grid-template-rows: auto 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 0.10fr 1fr 1fr 1fr 0.10fr;
+	grid-template-areas: 
+	" ... main4 main4 main4 ..."
+	"... ... ... ... ..."
+	"... iconHome iconHome iconHome ..."
+	"... iconBox iconBox iconBox ..."
+	"... iconPhone iconPhone iconPhone ...";
+	padding-bottom: 10%;
+}
+
+
+
+
+
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background: #006666;
+  border: 1px solid #ddd;
+  padding: .35em;
+  border-right: 1px solid #ccc;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  font-size: 0.8em;
+  border-right: 1px solid #ccc;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+/*PAGE FIVE/ CONTACT PAGE*/
+
+
+form placeholder {
+	font-style: italic;
+}
+
+legend {
+	text-align: center;
+}
+
+div form {
+	padding: 5%;
+}
+
+form {
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  margin: 0 auto;
+  width: 80vw;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 20vw;
+  text-align: right;
+}
+
+input, textarea, select {
+  font: 1em sans-serif;
+  width: 50vw;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+  display: inline-block;
+  padding: 5%;
+}
+
+button {
+  margin-left: .5em;
+}
+
+
+iframe {
+	max-width: 90%;
+	margin: 0 5%;
+
+}
+
+
+
+/*MOBILE OPTIONS AND MEDIA QUERIES
+MOBILE - MAX-WIDTH: 500PX*/
+
+
+
+@media screen and (max-width: 500px) {
+  
+
+
+	.image {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+/*	padding-right: 5%;*/
+	padding-bottom: 5%;
+	/*padding-left: 5%;*/
+	}
+
+
+	body {
+	font-size: 0.8em;
+	}
+
+
+
+
+	.wrapperNav {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+
+	}
+
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    padding: 10%;
+	}
+
+	li a {
+    max-width: 100%;
+    padding: 10%;
+
+	}
+
+
+	.nav ul li a:hover {
+	color: black;
+	font-size: 1em;
+	transform: scale(1.3);
+	}
+
+
+	.nav ul li a
+	{
+	  text-decoration: none;
+	  text-rendering: geometricPrecision;
+	  color: white;
+	  position: relative;
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  line-height: 40px;
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	  transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+	  transform-origin: 50% 30%;
+	}
+
+
+
+/*PAGE ONE IMAGES OPTION*/
+
+/*#wrapper1 {
+	background: url(../PageOne/imageCover/image2.jpg);
+	background-size: cover;
+	background-origin: content-box;
+	background-position: 350px 500px;
+}*/
+
+
+
+
+
+
+
+/*PAGE FOUR/ PRICING OPTIONS*/
+
+
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1em;
+  }
+
+  table thead {
+    border: none;
+
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+     border-right: none;
+
+  }
+
+  table td:before {
+  
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+
+
+
+/*PAGE FIVE/ FORM OPTIONS*/
+
+
+form {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 20vw;
+  text-align: left;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 50vw;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+form div .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+
+
+}  /* - END OF MEDIA QUERY*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOR TABLET*/
+
+
+@media screen and (min-width: 501px) {
+
+
+
+	.header div {
+	font-size: 1.2em;
+	}
+
+
+
+	body {
+	font-size: 1.2em;
+	}
+
+
+	/*NAVIGATION*/
+
+
+
+
+
+	nav 
+	{ 
+	    margin: 50px auto; 
+	    max-width: 100%; 
+	    background-color: #CC9933; 
+	    color: white;
+	    font-size: 1.25em;
+	}
+
+	ul { 
+	  padding: 0; 
+	  margin: 0; 
+	  height: 15%; 
+	  display: block; 
+	  position: relative;
+	  list-style-type: none;
+	} 
+	 
+
+	.nav ul li {
+	   list-style-type: none;
+	   display: inline-block;
+	   width: 23vw;
+	   padding: 0;
+	   margin: 0;
+	   text-align: center;
+	   padding: 1vw;
+	}
+
+
+	ul li a { 
+	  text-decoration: none; 
+	  align-self: center; 
+	  padding: 8px 10px;
+	} 
+	  
+	.nav ul li a:link { 
+	    color: white; 
+	} 
+
+
+	.nav ul li a
+	{
+	  text-decoration: none;
+	  text-rendering: geometricPrecision;
+	  color: white;
+	  position: relative;
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	  line-height: 40px;
+	  cursor: pointer;
+	  transition: color 0.3s ease;
+	  transition: transform .3s cubic-bezier(0.55, 0, 0.55, 0.2) , color .3s cubic-bezier(0.55, 0, 0.55, 0.2);
+	  transform-origin: 50% 30%;
+	}
+
+
+	.nav ul li a:hover {
+		color: black;
+		font-size: 1em;
+		transform: scale(1.3);
+	}
+
+
+		/*FOOTER*/
+
+
+		.leftFooter {
+		text-align: left;		
+		}
+
+		.middleFooter {
+			text-align: center;
+		}
+
+		.rightFooter {
+			text-align: right;
+		}
+
+
+		.leftAddress {
+			border-bottom: 1px solid black;
+			
+		}
+
+
+		.socialMedia {
+			border-bottom: 1px solid white;
+			color: white;
+		}
+
+		.legal {
+			border-bottom: 1px solid black;
+		}
+
+		#footer {
+			font-family: "Avenir Next", "Avenir", sans-serif;
+			display: flex;
+			flex-direction: row;
+			width: 90vw;
+			justify-content: space-between;
+		    flex-basis: auto;
+			background-color: #999933;
+			border-radius: 5px;
+			padding: 2%;
+			margin:0 auto;
+			/* margin: 2%;
+			margin-left: 2%; */
+		}
+
+
+		#footer a {
+			text-decoration: none;
+			list-style-type: none;
+			color: white;
+		}
+
+
+
+
+
+
+
+
+
+		/*PAGE TWO*/
+
+
+	.image2 {
+		float: left;
+
+	}
+
+
+	.image3 {
+		float: right;
+	}
+
+
+	.image2, .image3 {
+		margin-left: auto;
+	    margin-right: auto;
+		max-width: 60%;
+		padding-right: 5%;
+		padding-bottom: 3%;
+		padding-left: 5%;
+		padding-top: 3%;
+	}
+	
+
+	.aboutOne, .aboutTwo {
+		line-height: 1.25em;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	
+	.aboutOne {
+		text-align: left;
+	}
+	
+	.aboutTwo {
+		text-align: right;
+
+	}
+
+	.firstWord {
+		font-size: 1.1em;
+		font-weight: bold;
+
+	}
+
+
+	.main {
+		font-family: "Avenir Next", "Avenir", sans-serif;
+	}
+
+
+	/*PAGE TWO/ GRID DETAILS*/
+
+	#wrapper2 {
+		display: grid;
+		grid-gap: 5vh;
+		grid-template-rows: auto 0.5fr 1fr;
+		grid-template-columns: auto 1fr 1fr 1fr auto;
+		grid-template-areas: 
+		"... about about about ..."
+		"... ... ... ... ..."
+		"... iconBox iconBill iconPhone ...";
+		padding-bottom: 10%;
+	}
+
+
+
+
+
+		/*PAGE THREE*/
+
+
+
+	.delivery, .tracking, .pricing, .reschedule {
+		text-align: center;
+		color: white;
+	}
+
+
+
+
+
+
+		/*PAGE FOUR*/
+
+
+
+
+	/*PAGE FOUR/ GRID DETAILS*/
+
+	#wrapper4 {
+		display: grid;
+		grid-gap: 5vh;
+		grid-template-rows: auto 0.5fr 1fr;
+		grid-template-columns: auto 1fr 1fr 1fr auto;
+		grid-template-areas: 
+		"... main4 main4 main4 ..."
+		"... ... ... ... ..."
+		"... iconBox iconHome iconPhone ...";
+		padding-bottom: 10%;
+	}
+
+
+
+
+
+		/*PAGE FIVE/ FORM DETAILS*/
+
+	div form{
+	padding: 5%;
+	}
+
+	form {
+	  margin: 0 auto;
+	  width: 80vw;
+	  padding: 1em;
+	  border: 1px solid #CCC;
+	  border-radius: 1em;
+	}
+
+	form div + div {
+	  margin-top: 1em;
+	}
+
+	label {
+	  display: inline-block;
+	  width: 20vw;
+	  text-align: left;
+	}
+
+	input, textarea {
+	  font: 1em sans-serif;
+	  width: 50vw;
+	  box-sizing: border-box;
+	  border: 1px solid #999;
+	}
+
+	input:focus, textarea:focus {
+	  border-color: #000;
+	}
+
+	textarea {
+	  vertical-align: top;
+	  height: 5em;
+	}
+
+	.button {
+	  padding-left: 90px;
+	}
+
+	button {
+	  margin-left: .5em;
+	}
+
+
+	#wrapper6Reschedule, #wrapper7Tracking, #wrapper5Contact {
+		padding: 5%;
+	
+	}
+
+
+
+
+
+
+}  /*- END OF TABLE MEDIA QUERY*/
+
+
+
+
+
+
+
+/*DESKTOP MEDIA QUERY*/
+
+
+
+@media screen and (min-width: 800px) {
+
+		
+
+		/*PAGE ONE*/
+
+
+		#wrapper1 {
+			display: grid;
+			grid-gap: 5vh;
+			grid-template-rows: auto auto auto;
+			grid-template-columns: auto auto 1fr 1fr 1fr 1fr 1fr 1fr auto auto;
+			grid-template-areas: 
+			"... para1 para1 para1 para1 para2 para2 para2 para2 ..."
+			"... para3 para3 para3 para3 para4 para4 para4 para4 ..."
+			"... ... ... ... ... ... ... ... ... ...";
+			padding-bottom: 10%;
+		}
+		
+
+
+
+		/*PAGE THREE/ GRID DETAILS*/
+
+		#wrapper3 {
+			display: grid;
+			grid-gap: 5vh;
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: auto auto 1fr 1fr 1fr 1fr 1fr 1fr auto auto;
+			grid-template-areas: 
+			"... delivery delivery delivery delivery tracking tracking tracking tracking ..."
+			"... reschedule reschedule reschedule reschedule pricing pricing pricing pricing ..."
+			"... ... ... ... ... ... ... ... ... ..."
+			"... iconHome iconHome iconHome iconBill iconBill iconPhone iconPhone iconPhone ...";
+			padding-bottom: 10%;
+		}
+		
+
+
+
+
+
+} /*- END OF MEDIA QUERY*/

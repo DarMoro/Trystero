@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-11-18" view-index="0" gantt-divider-location="428" resource-divider-location="300" version="2.8.5" locale="en_IE">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="225" order="0"/>
+        <field id="tpd4" name="Begin date" width="100" order="1"/>
+        <field id="tpd5" name="End date" width="99" order="2"/>
+        <option id="color.recent"><![CDATA[#003333 #009999 #00cc33 #00cc00 #00ff00 #cccc00 #3333ff #cc0000]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="23" name="Discovery/ Planning" color="#cc0000" meeting="false" project="true" start="2017-11-21" duration="3" complete="0" expand="false">
+            <task id="26" name="Write About Company" color="#8cb6ce" meeting="false" start="2017-11-21" duration="3" complete="0" expand="true"/>
+            <task id="38" name="Research Similar companies" meeting="false" start="2017-11-21" duration="3" complete="0" expand="true"/>
+            <task id="40" name="Finalise structure" meeting="false" start="2017-11-21" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="12" name="Design" color="#3333ff" meeting="false" start="2017-11-24" duration="2" complete="0" expand="false">
+            <task id="32" name="Finalise Colours" meeting="false" start="2017-11-24" duration="2" complete="0" expand="true"/>
+            <task id="34" name="Finish Logo" meeting="false" start="2017-11-24" duration="2" complete="0" expand="true"/>
+            <task id="36" name="Plan out pages" meeting="false" start="2017-11-24" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="44" name="Content Writing/ Assembly" color="#cccc00" meeting="false" start="2017-11-25" duration="2" complete="0" expand="false">
+            <task id="46" name="Edit what you have" meeting="false" start="2017-11-25" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="47" name="Development and Programming" color="#00ff00" meeting="false" start="2017-11-27" duration="8" complete="0" expand="false">
+            <task id="51" name="Page One" color="#00cc00" meeting="false" start="2017-11-27" duration="3" complete="0" expand="true">
+                <task id="52" name="Design Page One" meeting="false" start="2017-11-27" duration="3" complete="0" expand="true"/>
+                <task id="53" name="Page One brief" meeting="false" start="2017-11-27" duration="3" complete="0" expand="true"/>
+            </task>
+            <task id="54" name="Page Two" color="#00cc33" meeting="false" start="2017-11-27" duration="5" complete="0" expand="true">
+                <task id="55" name="Customer Quotes" meeting="false" start="2017-11-27" duration="5" complete="0" expand="true"/>
+            </task>
+            <task id="56" name="Page Three" meeting="false" start="2017-11-27" duration="5" complete="0" expand="true"/>
+            <task id="57" name="Page Four - Contact" color="#00cc33" meeting="false" start="2017-11-29" duration="6" complete="0" expand="true">
+                <task id="58" name="Page Four - Contact Form" color="#8cb6ce" meeting="false" start="2017-11-29" duration="5" complete="0" expand="true"/>
+                <task id="59" name="Page Four - Map" meeting="false" start="2017-11-29" duration="6" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="61" name="Testing and Review" color="#009999" meeting="false" start="2017-11-30" duration="7" complete="0" expand="false">
+            <task id="66" name="Test in all browsers" meeting="false" start="2017-11-30" duration="7" complete="0" expand="true"/>
+            <task id="67" name="Test on phones/ tablets" meeting="false" start="2017-11-30" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="71" name="Launch" color="#003333" meeting="false" start="2017-12-07" duration="1" complete="0" expand="false">
+            <task id="73" name="Put on servers" meeting="false" start="2017-12-07" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

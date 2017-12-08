@@ -84,10 +84,8 @@ body {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	max-width: 100%;
-	/*padding-right: 5%;*/
 	padding-bottom: 5%;
-	/*padding-left: 5%;*/
-	/*border-radius: 5px;*/
+
 
 }
 
@@ -283,7 +281,7 @@ a:visited {
 }
 
 #footer {
-	font-size: .5em;
+	font-size: .75em;
 	font-family: "Avenir Next", "Avenir", sans-serif;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -779,9 +777,9 @@ MOBILE - MAX-WIDTH: 500PX*/
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	max-width: 100%;
-/*	padding-right: 5%;*/
+
 	padding-bottom: 5%;
-	/*padding-left: 5%;*/
+	
 	}
 
 

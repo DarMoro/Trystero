@@ -1,0 +1,232 @@
+html  { 
+box-sizing: border-box; 
+}  
+*, *:before, *:after  
+{  
+box-sizing: inherit;  
+}  
+
+
+/*BODY OPTIONS*/
+
+body {
+	font-size: 1em;
+	background-color: #cc9933;
+	font-family: copperplate Gothic Bold, Georgia, Times, "Times New Roman";  
+}
+
+
+
+/*HEADER*/
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #999933;
+	border-radius: 5px;
+	margin: 2%;
+	padding: 5%;
+
+}
+
+.logo {
+	max-width: 40%;
+}
+
+.address span {
+	text-decoration: underline;
+}
+
+
+/*NAVIGATION*/
+
+
+nav 
+{ 
+    margin: 50px auto; 
+    max-width: 100%; 
+    width: 100%;
+    background-color: #CC9933; 
+    color: white;
+    font-size: 1.25em;
+}
+
+ul { 
+  padding: 0; 
+  margin: 0; 
+  max-width: 100%; 
+  height: 15%; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: center; 
+  list-style-type: none; 
+} 
+  
+ul li a { 
+  text-decoration: none; 
+  align-self: center; 
+  padding: 8px 10px; 
+} 
+  
+a:link { 
+    color: white; 
+} 
+  
+a:visited { 
+    color: white; 
+} 
+
+
+/*IMAGE*/
+
+.image {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+}
+
+
+/*MAIN BODY*/
+
+h1 {
+	text-shadow: 2px 2px 2px #000;
+}
+
+.arrow {
+	max-width: 40%;
+	padding: 10px;
+}
+
+.icon {
+	max-width: 40%;
+	align-self: center;
+}
+
+
+.delivery, .tracking, .reschedule, .iconHome, .iconBill, .iconPhone {
+	text-align: center;
+	color: white;
+}
+
+.delivery {
+	grid-area: delivery;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.tracking {
+	grid-area: tracking;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.reschedule {
+	grid-area: reschedule;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+
+.iconHome {
+	grid-area: iconHome;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.iconBill {
+	grid-area: iconBill;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+.iconPhone {
+	grid-area: iconPhone;
+	background-color: #006666;
+	border-radius: 5px;
+	padding: 10%;
+}
+
+
+/*GRID DETAILS*/
+
+#wrapper {
+	display: grid;
+	grid-gap: 2%;
+	grid-template-rows: auto auto auto 0.5fr 0.5fr 0.5fr 0.5fr;
+	grid-template-columns: 0.10fr 1fr 1fr 1fr 0.10fr;
+	grid-template-areas: 
+	"... delivery delivery delivery ..."
+	"... tracking tracking tracking ..."
+	"... reschedule reschedule reschedule ..."
+	"... ... ... ... ..."
+	"... iconHome iconHome iconHome ..."
+	"... iconBill iconBill iconBill ..."
+	"... iconPhone iconPhone iconPhone ...";
+	padding-bottom: 10%;
+}
+
+
+
+
+/* FOOTER */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #999933;
+	border-radius: 5px;
+	padding: 5%;
+	margin: 2%;
+}
+
+.footer span {
+	text-decoration: underline;
+}
+
+
+.addressFooter {
+	max-width: auto;
+}
+
+.email {
+	text-decoration: underline;
+	max-width: auto;
+}
+
+
+
+
+
+
+
+
+
+/*FOR TABLET AND DESKTOP*/
+
+
+/*GRID DETAILS*/
+
+/*#wrapper {
+	display: grid;
+	grid-gap: 5%;
+	grid-template-rows: auto auto auto auto 0.50fr;
+	grid-template-columns: auto auto auto auto auto;
+	grid-template-areas: 
+	"... delivery delivery delivery ..."
+	"... tracking tracking tracking ..."
+	"... reschedule reschedule reschedule ..."
+	"... ... ... ... ..."
+	"... iconHome iconBill iconPhone ...";
+}
+*/
